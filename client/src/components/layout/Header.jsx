@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
 // 1. Import the custom hook
 import { useAuth } from '../../context/authContext'; 
 
@@ -9,6 +10,14 @@ const Header = () => {
   return (
     <header style={headerStyle}>
       <div style={containerStyle}>
+=======
+
+const Header = () => {
+  return (
+    <header style={headerStyle}>
+      <div style={containerStyle}>
+        {"SX"}
+>>>>>>> d39ade6f41729e70bccd40657a1721fb46e33cd7
         <h1 style={logoStyle}>
           <Link to="/" style={linkStyle}>
             {"SportX"}
@@ -16,6 +25,7 @@ const Header = () => {
         </h1>
 
         {/* Navigation Links */}
+<<<<<<< HEAD
         <nav style={{ display: 'flex', alignItems: 'center' }}>
           <Link to="/" style={navLinkStyle}>Home</Link>
           
@@ -39,14 +49,24 @@ const Header = () => {
               <Link to="/register" style={navLinkStyle}>Register</Link>
             </>
           )}
+=======
+        <nav>
+          <Link to="/" style={navLinkStyle}>Home</Link>
+          <Link to="/login" style={navLinkStyle}>Login</Link>
+          <Link to="/register" style={navLinkStyle}>Register</Link>
+>>>>>>> d39ade6f41729e70bccd40657a1721fb46e33cd7
         </nav>
       </div>
     </header>
   );
 };
 
+<<<<<<< HEAD
 // --- Styles ---
 
+=======
+// Basic inline styles (you can move these to CSS later)
+>>>>>>> d39ade6f41729e70bccd40657a1721fb46e33cd7
 const headerStyle = {
   backgroundColor: '#333',
   color: 'white',
@@ -78,6 +98,7 @@ const navLinkStyle = {
   marginLeft: '2rem',
 };
 
+<<<<<<< HEAD
 // Added a simple style for the logout button to match your theme
 const logoutButtonStyle = {
   backgroundColor: '#ff4d4d',
@@ -92,3 +113,6 @@ const logoutButtonStyle = {
 };
 
 export default Header;
+=======
+export default Header;
+>>>>>>> d39ade6f41729e70bccd40657a1721fb46e33cd7

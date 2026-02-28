@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useAuth } from '../context/authContext';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -25,10 +26,14 @@ const Dashboard = () => {
     alert("Button Doesnt Work 🙄");
   };
 
+=======
+const Dashboard = () => {
+>>>>>>> d39ade6f41729e70bccd40657a1721fb46e33cd7
   return (
     <div style={containerStyle}>
       <div style={headerStyle}>
         <h1>Dashboard</h1>
+<<<<<<< HEAD
         <p>Welcome back! {user.name}</p>
       </div>
 
@@ -66,6 +71,25 @@ const Dashboard = () => {
           <p style={noteStyle}>
             App is UNDER CONSTRUCTION... <br />
             Might fall into a pit of "404 Not found" if explored too much.
+=======
+        <p>Welcome back! <span style={errorStyle}>User.exe</span></p>
+      </div>
+
+      <div style={contentStyle}>
+        <div style={placeholderStyle}>
+          <h2>Dashboard</h2>
+          <p>Our Website Provides you with the best services of <span style={errorStyle} >("404 Word Not found")</span>
+          </p>
+          <ul style={listStyle}>
+            <li>Todays Posts...</li>
+            <li>Statistics and analytics</li>
+            <li>Quick actions <button onClick={handleClick}>Create</button> <button onClick={handleClick}>Edit</button> <button onClick={handleClick}>Delete</button> </li>
+            <li>Recent activity <button>Show History</button></li>
+          </ul>
+          <p style={noteStyle}>
+            App is UNDER CONSTRUCTION... <br></br>
+            Might fall into a pit of "404 Not found" is explored too much.
+>>>>>>> d39ade6f41729e70bccd40657a1721fb46e33cd7
           </p>
         </div>
       </div>
@@ -73,12 +97,18 @@ const Dashboard = () => {
   );
 };
 
+<<<<<<< HEAD
 // --- Styles (Kept exactly as yours, added one for buttons) ---
 
 const actionButtonStyle = {
   marginLeft: '5px',
   cursor: 'pointer'
 };
+=======
+const handleClick = () => {
+    alert("Button Doesnt Work 🙄")
+}
+>>>>>>> d39ade6f41729e70bccd40657a1721fb46e33cd7
 
 const containerStyle = {
   minHeight: '80vh',
@@ -118,6 +148,7 @@ const errorStyle = {
   color: 'red',
 };
 
+<<<<<<< HEAD
 const cardStyle = {
   backgroundColor: '#fff',
   padding: '2rem',
@@ -139,5 +170,8 @@ const logoutButtonStyle = {
   cursor: 'pointer',
   marginTop: '1rem',
 };
+=======
+
+>>>>>>> d39ade6f41729e70bccd40657a1721fb46e33cd7
 
 export default Dashboard;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -267,6 +268,41 @@ const validateForm = () => {
     </div>
   </div>
 );};
+=======
+import { Link } from 'react-router-dom';
+
+const Register = () => {
+  return (
+    <div style={containerStyle}>
+      <div style={formContainerStyle}>
+        <h1 style={titleStyle}>Create Account</h1>
+        <p style={subtitleStyle}>Join {/* Your Platform Name */} today</p>
+        
+        {/* Placeholder for registration form */}
+        <div style={placeholderStyle}>
+          <p>Registration form will be implemented in a future lesson</p>
+          <p>This will include:</p>
+          <ul style={listStyle}>
+            <li>Name input field</li>
+            <li>Email input field</li>
+            <li>Password input field</li>
+            <li>Confirm password field</li>
+            <li>Registration button</li>
+            <li>Form validation</li>
+          </ul>
+        </div>
+
+        <p style={linkTextStyle}>
+          Already have an account?{' '}
+          <Link to="/login" style={linkStyle}>
+            Login here
+          </Link>
+        </p>
+      </div>
+    </div>
+  );
+};
+>>>>>>> d39ade6f41729e70bccd40657a1721fb46e33cd7
 
 // Use the same styles as Login page
 const containerStyle = {
@@ -275,6 +311,7 @@ const containerStyle = {
   justifyContent: 'center',
   alignItems: 'center',
   padding: '2rem',
+<<<<<<< HEAD
   backgroundColor: '#f8f9fa',
 };
 
@@ -284,6 +321,16 @@ const formContainerStyle = {
   padding: '2.5rem',
   backgroundColor: 'white',
   borderRadius: '10px',
+=======
+};
+
+const formContainerStyle = {
+  maxWidth: '400px',
+  width: '100%',
+  padding: '2rem',
+  backgroundColor: 'white',
+  borderRadius: '8px',
+>>>>>>> d39ade6f41729e70bccd40657a1721fb46e33cd7
   boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
 };
 
@@ -291,13 +338,17 @@ const titleStyle = {
   textAlign: 'center',
   marginBottom: '0.5rem',
   color: '#333',
+<<<<<<< HEAD
   fontSize: '2rem',
+=======
+>>>>>>> d39ade6f41729e70bccd40657a1721fb46e33cd7
 };
 
 const subtitleStyle = {
   textAlign: 'center',
   color: '#666',
   marginBottom: '2rem',
+<<<<<<< HEAD
   fontSize: '0.95rem',
 };
 
@@ -373,18 +424,40 @@ const errorMessageStyle = {
   borderRadius: '5px',
   marginBottom: '1rem',
   border: '1px solid #f5c6cb',
+=======
+};
+
+const placeholderStyle = {
+  backgroundColor: '#f8f9fa',
+  padding: '1.5rem',
+  borderRadius: '5px',
+  marginBottom: '1rem',
+};
+
+const listStyle = {
+  paddingLeft: '1.5rem',
+  marginTop: '1rem',
+>>>>>>> d39ade6f41729e70bccd40657a1721fb46e33cd7
 };
 
 const linkTextStyle = {
   textAlign: 'center',
+<<<<<<< HEAD
   marginTop: '1.5rem',
   color: '#666',
+=======
+  marginTop: '1rem',
+>>>>>>> d39ade6f41729e70bccd40657a1721fb46e33cd7
 };
 
 const linkStyle = {
   color: '#007bff',
   textDecoration: 'none',
+<<<<<<< HEAD
   fontWeight: '500',
+=======
+  fontWeight: 'bold',
+>>>>>>> d39ade6f41729e70bccd40657a1721fb46e33cd7
 };
 
 export default Register;
